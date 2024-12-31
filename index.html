@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Andrew Yang</title>
-        <meta name="description" content="Andrew Yang is a software engineer and a lifelong learner!">
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css"
-            rel="stylesheet"
-        />  
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Yang</title>
+    <meta
+      name="description"
+      content="Andrew Yang is a software engineer and a lifelong learner!"
+    />
+    <!-- Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-    <!--This will be where I house all the info on the page-->
-    <body>
-        <header>
-            <div>
-                <h1>Andrew Yang</h1>
-                <h2>Student at Boston College, Computer Science B.A. Candidate</h2>
-                <img src="" alt="me">
-                <p>Hi, I'm Andrew Yang, a current senior studying Computer Science at Boston College
-                I'm a curious life-long learner with experience in web development, deep learning, 
-                and software engineering. Currently, I work as a Computer Support Analyst at 
-                BC Auxiliary Services. Outside of work, I enjoy playing tennis, basketball, and pickleball, 
-                powerlifting, and reading about anything from sports to theology. </p>
-            </div>
-        </header>
+  <body class="bg-gray-50">
+    <!-- Wrapper container to center content and give it some padding -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <!-- A 2-column layout using the grid system -->
+      <div class="grid grid-cols-3 gap-8">
+        <!-- LEFT SIDE (Profile / Bio) -->
+        <div class="col-span-1 bg-white p-6 rounded shadow">
+          <h1 class="text-xl font-bold mb-2">Section 1 Yang</h1>
+          
+          <!-- Placeholder for a profile image/icon -->
+          <div class="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center mb-4">
+            <span class="text-gray-700">IMG</span>
+          </div>
 
-        <!--This will be where I house all the about info -->
-        <main>
+          <p class="text-gray-700 mb-4">
+            Hi, I'm Andrew Yang, a current senior studying Computer Science at
+            Boston College. I'm a curious life-long learner with experience in
+            web development, deep learning, and software engineering. 
+          </p>
+          <p class="text-gray-700 mb-4">
+            Currently, I work as a Computer Support Analyst at BC Auxiliary Services.
+          </p>
+          <p class="text-gray-700">
+            Outside of work, I enjoy playing tennis, basketball, and pickleball,
+            powerlifting, and reading about anything from sports to theology.
+          </p>
+        </div>
 
-        </main>
-    </body>
+        <!-- RIGHT SIDE (Tabs for Work Experience, Projects, etc.) -->
+        <div class="col-span-2 bg-white p-6 rounded shadow">
+          <!-- Simple tab-like navigation -->
+          <nav class="border-b mb-4">
+            <ul class="flex space-x-6">
+              <li>
+                <a
+                  href="#"
+                  class="pb-2 border-b-2 border-transparent hover:border-blue-500 transition-colors"
+                  >Work Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pb-2 border-b-2 border-transparent hover:border-blue-500 transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pb-2 border-b-2 border-transparent hover:border-blue-500 transition-colors"
+                  >Hobbies</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- A placeholder for tab content -->
+          <div>
+            <p class="text-gray-700">
+              Select a tab above to display its content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
